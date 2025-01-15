@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Buy Kids Products Online</title>
+  <title>Checkout for Product-Kidzera</title>
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="imgs/favicon.png">
   <link rel="icon" type="image/png" href="imgs/apple-touch-icon.png">
@@ -223,12 +223,12 @@
 
 
 #cart-id .card-header {
-  background: transparent;
+  background: #eee;
   border-bottom: none;
   padding: 0;
 }
 #cart-id .card-body {
-  background: transparent;
+  background: #eee;
   border-bottom: none;
   padding: 0;
   margin-top: -35px;
@@ -434,17 +434,6 @@ if(typeof _bsa !== 'undefined' && _bsa) {
         <div class="col-lg-9 col-sm-8 header-right ml-auto text-sm-right text-center">
           <!-- header lists -->
           <ul class="top-header-lists">
-            <li>
-              <div id="location-details">
-                    <div style="display: inline-flex;">
-                     <b id="road"></b>&nbsp;<b id="city"></b>&nbsp;<b id="state"></b>&nbsp;<b id="postcode"></b>
-                    </div>
-                  </div>
-            </li>
-            <li>
-              <button class="button btn">
-                <i class="fas fa-map-marker mr-1"></i>Select Location</button>
-            </li>
             <li class="mx-3">
               <a href="#login" data-toggle="modal" data-target="#exampleModal" class="">
                 <i class="fas fa-sign-in-alt mr-1"></i> Log In </a>
@@ -460,122 +449,145 @@ if(typeof _bsa !== 'undefined' && _bsa) {
     </div>
   </div>
   <!-- modals -->
+
   <!-- log in -->
   <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog" role="document">
-      <div class="modal-content" style="border:none">        
+      <div class="modal-content" style="border:none"> 
+      <div class="card-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>        
+      </div>       
         <div class="card-body">
-          <div class="row">
-              <div class="col-lg-5 col-md-5 col-sm-5">
-                <div class="login-box">
-                  <div class="login-content">
-                    <h4>SIGN IN</h4>
-                    <p>Get access to your Orders, Wishlist and Recommendations</p>
-                  </div>
-                    <img src="imgs/login3.png" class="login-img">
-                </div>
-              </div>
-              <div class="col-lg-7 col-md-7 col-sm-7">
-                <div class="row">
-                      <div class="col-lg-12 col-md-12 col-sm-12">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
-                        </button>
-                      </div>
-                    </div>                
-                  <div class="login-field">                    
+          <h4 class="text-center"><b>SIGN IN</b></h4><hr>
+          <!-- <p>Get access to your Orders, Wishlist and Recommendations</p> -->
+          <div class="login-field">                    
                     <div class="row">
-                      <div class="col-lg-12 col-md-12 col-sm-12">
-                        <input type="text" name="" class="debit-card" placeholder="Enter Email/Mobile Number">
+                      <div class="col-lg-6 col-md-6 col-sm-6">
+                        <label><h6 class="fs-title">Email/ Mobile :</h6></label>
+                        <input type="text" name="" class="login-input" placeholder="Enter Email/Mobile Number">
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-6">
+                        <label><h6 class="fs-title">Password :</h6></label>
+                        <input type="text" name="" class="login-input" placeholder="Enter OTP">
+                        <a href="#" class="right">Resend OTP</a>
                       </div>
                     </div><br>
                     <div class="row">
                       <div class="col-lg-12 col-md-12 col-sm-12">
-                        <span>By continuing, you agree to Kidzera's <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>.</span>
-                      </div>
-                    </div><br>
-                    <div class="row">
-                      <div class="col-lg-12 col-md-12 col-sm-12">
-                        <button type="submit" class="btn login-btn">REQUEST OTP</button>
+                        <input type="checkbox" name="">
+                        <span>Agree to Kidzera's <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>.</span>
                       </div>
                     </div>
                     <div class="row">
                       <div class="col-lg-12 col-md-12 col-sm-12">
-                        <div class="social text-center mt-2">
-                          <ul class="list-unstyled">
-                            <li class="d-inline">
-                              <a class="icon fb" href="#facebook">
-                                <i class="fab fa-facebook-f"></i>
-                              </a>
-                            </li>
-                            <li class="d-inline">
-                              <a class="icon gp" href="#google-plus">
-                                <i class="fab fa-google-plus-g"></i>
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
+                        <button type="submit" class="btn login-btn">LOGIN</button>
                       </div>
                     </div>            
-                    <div class="row text-center new">
+                    <div class="row text-center">
                       <div class="col-lg-12 col-md-12 col-sm-12">
-                        <span><a href="#" data-toggle="modal" data-target="#exampleModal2">New to Kidzera? Create an account</a></span>
+                        <span><a href="#" data-toggle="modal" data-target="#exampleModal2"><b>New to Kidzera? Create an account</b></a></span>
                       </div>
                     </div>
-                  </div>
-              </div>
           </div>
+        </div>
+        <div class="card-footer">
+          <img src="imgs/login3.png" class="login-img text-center">
         </div>
       </div>
     </div>
   </div>
+
   <!-- register -->
   <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog" role="document">
-      <div class="modal-content" style="border:none">        
+      <div class="modal-content" style="border:none"> 
+      <div class="card-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>        
+      </div>       
         <div class="card-body">
-          <div class="row">
-              <div class="col-lg-5 col-md-5 col-sm-5">
-                <div class="login-box">
-                  <div class="login-content">
-                    <h4>SIGN UP</h4>
-                    <p>Sign up with your mobile number to get started</p>
-                  </div>
-                    <img src="imgs/login3.png" class="login-img">
-                </div>
-              </div>
-              <div class="col-lg-7 col-md-7 col-sm-7">
-                <div class="row">
-                      <div class="col-lg-12 col-md-12 col-sm-12">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
-                        </button>
-                      </div>
-                    </div>                
-                  <div class="login-field">                    
-                    <div class="row">
-                      <div class="col-lg-12 col-md-12 col-sm-12">
-                        <input type="text" name="" class="debit-card" placeholder="Enter Mobile Number">
-                      </div>
-                    </div><br>
-                    <div class="row">
-                      <div class="col-lg-12 col-md-12 col-sm-12">
-                        <span>By continuing, you agree to Kidzera's <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>.</span>
-                      </div>
-                    </div><br>
-                    <div class="row">
-                      <div class="col-lg-12 col-md-12 col-sm-12">
-                        <button type="submit" class="btn login-btn">CONTINUE</button>
-                      </div>
-                    </div>            
-                    <div class="row text-center new2">
-                      <div class="col-lg-12 col-md-12 col-sm-12">
-                        <span><a href="#" data-toggle="modal" data-target="#exampleModal2">Existing User? Log in</a></span>
-                      </div>
-                    </div>
-                  </div>
-              </div>
-          </div>
+          <h4 class="text-center"><b>SIGN UP</b></h4><hr>
+          <!-- <p>Get access to your Orders, Wishlist and Recommendations</p> -->
+          <div class="container">
+    <div class="row justify-content-center">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="card">
+                  <form id="msform">
+                    <!-- fieldsets -->
+                    <fieldset>
+                        <div class="form-card">
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <h6 class="fs-title">Personal Information :</h6>
+                                </div>
+                            </div> 
+                            <div class="row">
+                              <div class="col-lg-6 col-md-6 col-sm-6">
+                                <input type="email" class="login-input" name="email" placeholder="Email Id *" />
+                              </div>
+                              <div class="col-lg-6 col-md-6 col-sm-6">
+                                <input type="text" class="login-input" name="uname" placeholder="Mobile Number *" /> 
+                              </div>
+                            </div>
+                        </div> 
+                        <input type="button" name="next" class="next action-button" value="NEXT" />
+                    </fieldset>
+                    <fieldset>
+                        <div class="form-card">
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <h6 class="fs-title">Create Password :</h6>
+                                </div>
+                            </div> 
+                            <div class="row">
+                              <div class="col-lg-6 col-md-6 col-sm-6">
+                                <input type="password" class="login-input" name="pwd" placeholder="Password *" /> 
+                              </div>
+                              <div class="col-lg-6 col-md-6 col-sm-6">
+                                <input type="password" class="login-input" name="cpwd" placeholder="Confirm Password *" />
+                              </div>
+                            </div>                             
+                        </div> 
+                        <input type="button" name="next" class="next action-button" value="NEXT" /> <input type="button" name="previous" class="previous action-button-previous" value="PREVIOUS" />
+                    </fieldset>
+                    <fieldset>
+                        <div class="form-card">
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <h6 class="fs-title">One Time Password :</h6>
+                                </div>
+                            </div> 
+                             <input type="text" class="login-input" name="email" placeholder="Enter 4-digit OTP" /> 
+                             <a href="#">Resend OTP</a>
+                        </div> <input type="button" name="next" class="next action-button" value="REGISTER" />
+                        <input type="button" name="previous" class="previous action-button-previous" value="PREVIOUS" />
+                    </fieldset>
+                    <fieldset>
+                        <div class="form-card">
+                          <div class="row justify-content-center">
+                                <div class="col-3"> <img src="https://i.imgur.com/GwStPmg.png" class="fit-image"> </div>
+                            </div> <br>
+                            <h2 class="purple-text text-center"><strong>SUCCESS !</strong></h2> <br>
+                            <br>
+                            <div class="row justify-content-center">
+                                <div class="col-7 text-center">
+                                    <h5 class="success-text text-center">You Have Successfully Signed Up</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <span><a href="#" data-toggle="modal" data-target="#exampleModal2"><b>Existing User? Sign In</b></a></span>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+        <div class="card-footer">
+          <img src="imgs/login3.png" class="login-img text-center">
         </div>
       </div>
     </div>
@@ -608,24 +620,9 @@ if(typeof _bsa !== 'undefined' && _bsa) {
             <div
               class="col-lg-3 col-sm-4 top_nav_right text-center mt-sm-0 mt-2 d-flex align-items-center justify-content-between">
               <div class="cart-store">
-                <!-- toggle switch for light and dark theme -->
-                <div class="cont-ser-position">
-                  <nav class="navigation">
-                    <div class="theme-switch-wrapper">
-                      <label class="theme-switch" for="checkbox">
-                        <input type="checkbox" id="checkbox">
-                        <div class="mode-container">
-                          <i class="gg-sun"></i>
-                          <i class="gg-moon"></i>
-                        </div>
-                      </label>
-                    </div>
-                  </nav>
-                </div>
-                <!-- //toggle switch for light and dark theme -->
               </div>
               <div class="cart-store">
-                <a href="wishlist.html"><i class="far fa-heart"></i></a>
+                <a href="wishlist.html"><img src="imgs/wishlist.png" class="top-icons"></a>
               </div>
               <div class="wthreecartaits wthreecartaits2 cart cart box_1">
                 <form action="#" method="post" class="last text-right">
@@ -634,10 +631,16 @@ if(typeof _bsa !== 'undefined' && _bsa) {
                   <nav class=" navbar-expand-lg ">
                    <div class="" id="navbarSupportedContent">
                      <button type="button" class="btn my-2 my-sm-0" data-toggle="modal" data-target="#staticBackdrop">
-                       <i class="fas fa-shopping-cart marginright total-count"></i>
+                       <img src="imgs/cart.gif" class="top-icons"><sup class="marginright total-count"></sup></i>
                      </button>
+                   </div>
+                 </nav>
                 </form>
-              </div>
+              </div>  
+              <div class="cart-store">
+                <a><img src="imgs/customer_support3.png" class="top-icons"></a> 
+
+              </div>            
             </div>
             <!-- //cart details -->
           </div>
@@ -656,12 +659,7 @@ if(typeof _bsa !== 'undefined' && _bsa) {
             <select id="agileinfo-nav_search" name="agileinfo_search" required="" onchange="(this.options[this.selectedIndex].value?  window.open(this.options[this.selectedIndex].value,'_blank'):'')">
               <option value="">All Categories</option>
               <option value="toys and gaming.html">Toys & Gaming</option>
-              <option value="boys fashion.html">Boy Fashion</option>
-              <option value="girl fashion.html">Girl Fashion</option>
-              <option value="diapers & rompers.html">Diaper & Rompers</option>
-              <option value="footwear.html">Footwear</option>
               <option value="gear.html">Gear</option>
-              <option value="bathing.html">Bathing</option>
               <option value="fashion accessories.html">Fashion Accessories</option>
             </select>
           </form>
@@ -678,175 +676,34 @@ if(typeof _bsa !== 'undefined' && _bsa) {
                 <span class="sr-only">(current)</span>
               </a>
             </li>
+
             <li class="nav-item dropdown mr-lg-2 mb-lg-0 mb-2">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">
-                Clothing
+                Services
               </a>
               <div class="dropdown-menu">
-                <div class="agile_inner_drop_nav_info p-4">
-                  <!-- <h5 class="mb-3">Kids Wear</h5> -->
-                  <div class="row">
-                    <div class="col-sm-6 multi-gd-img">
-                      <h5 class="mb-3">Boy Fashion</h5>
-                      <ul class="multi-column-dropdown">
-                        <li>
-                          <a href="product.html">Ethnic wear</a>
-                        </li>
-                        <li>
-                          <a href="product.html">Party Wear</a>
-                        </li>
-                        <li>
-                          <a href="product.html">Nightwear</a>
-                        </li>
-                        <li>
-                          <a href="product.html">Thermals</a>
-                        </li>
-                        <li>
-                          <a href="product.html">Woolen caps & Ear Muffs</a>
-                        </li>
-                        <li>
-                          <a href="product.html">Jeans & Trousers</a>
-                        </li>
-                        <li>
-                          <a href="product.html">Inner wear</a>
-                        </li>
-                        <li>
-                          <a href="product.html">Rainwear</a>
-                        </li>
-                        <li>
-                          <a href="product.html">Pajamas & Trackpants</a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="col-sm-6 multi-gd-img">
-                      <h5 class="mb-3">Girl Fashion</h5>
-                      <ul class="multi-column-dropdown">
-                        <li>
-                          <a href="product.html">Frocks & Dresses</a>
-                        </li>
-                        <li>
-                          <a href="product.html">Woolen Dress</a>
-                        </li>
-                        <li>
-                          <a href="product.html">Sweatshirts & Hoodies</a>
-                        </li>
-                        <li>
-                          <a href="product.html">Shorts & Skirts</a>
-                        </li>
-                        <li>
-                          <a href="product.html">Innerwear</a>
-                        </li>
-                        <li>
-                          <a href="product.html">Party Wear</a> 
-                        </li>
-                        <li>
-                          <a href="product.html">Ethnic Wear</a>
-                        </li>
-                        <li>
-                          <a href="product.html">Stockings & Tights</a>
-                        </li>
-                        <li>
-                          <a href="product.html">Jumpsuits & Dungarees</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="nav-item dropdown mr-lg-2 mb-lg-0 mb-2">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                Toys & Gaming
-              </a>
-              <div class="dropdown-menu">
-                <div class="agile_inner_drop_nav_info p-4">
-                  <h5 class="mb-3">Toys & Gaming</h5>
-                  <div class="row">
-                    <div class="col-sm-6 multi-gd-img">
-                      <ul class="multi-column-dropdown">
-                        <li>
-                          <a href="product.html">Ludo, Snakes & Ladders</a>
-                        </li>
-                        <li>
-                          <a href="product.html">IQ Games</a>
-                        </li>
-                        <li>
-                          <a href="product.html">PC Games & Gaming Consoles</a>
-                        </li>
-                        <li>
-                          <a href="product.html">Radio & Remote Control Toys</a>
-                        </li>
-                        <li>
-                          <a href="product.html">earning & Educational Toys</a>
-                        </li>
-                        <li>
-                          <a href="product.html">kids Puzzles</a>
-                        </li>
-                        <li>
-                          <a href="product.html">Stacking Toys</a>
-                        </li>
-                        <li>
-                          <a href="product.html">Soft Toys</a>
-                        </li>
-                        <li>
-                          <a href="product.html">Blocks & Construction Sets</a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="col-sm-6 multi-gd-img">
-                      <ul class="multi-column-dropdown">
-                        <li>
-                          <a href="product.html">Play Dough, Sand & Moulds</a>
-                        </li>
-                        <li>
-                          <a href="product.html">Coloring, Sequencing & Engraving Art</a>
-                        </li>
-                        <li>
-                          <a href="product.html">Dolls & Dollhouses</a>
-                        </li>
-                        <li>
-                          <a href="product.html">Push & Pull Along Toys</a>
-                        </li>
-                        <li>
-                          <a href="product.html">Role & Pretend Play Toys</a>
-                        </li>
-                        <li>
-                          <a href="product.html">Play Gyms & Playmats</a>
-                        </li>
-                        <li>
-                          <a href="product.html">Action Figures & Collectibles</a>
-                        </li>
-                        <li>
-                          <a href="product.html">Kids Gadgets</a>
-                        </li>
-                        <li>
-                          <a href="product.html">Art Crafts & Hobby Kits</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="nav-item dropdown mr-lg-2 mb-lg-0 mb-2">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                More Finds
-              </a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="product.html">Walkers</a>
-                <a class="dropdown-item" href="product.html">Bicycles</a>
-                <a class="dropdown-item" href="product.html">Bathing</a>
-                <a class="dropdown-item" href="product.html">Footwear</a>
-                <a class="dropdown-item" href="product.html">Fashion Accessories</a>
-                <a class="dropdown-item" href="product.html">Diapers</a>
-                <a class="dropdown-item" href="product.html">Rompers</a>
-                <a class="dropdown-item" href="product.html">Scooters</a>
-                <a class="dropdown-item" href="product.html">Swings</a>
+                <a class="dropdown-item" href="toys and gaming.html">Toys & Gaming</a>
+                <a class="dropdown-item" href="fashion accessories.html">Gear</a>
+                <a class="dropdown-item" href="gear.html">Fashion Accessories</a>
               </div>
             </li> 
+            <li class="nav-item mr-lg-2 mb-lg-0 mb-2">
+              <a class="nav-link" href="product.html">New Arrivals</a>
+            </li> 
+            <li class="nav-item mr-lg-2 mb-lg-0 mb-2">
+              <a class="nav-link" href="#">Blog</a>
+            </li>         
+            <li class="nav-item mr-lg-2 mb-lg-0 mb-2">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="track.html">Track</a>
+            </li>
             <li class="nav-item dropdown mr-lg-2 mb-lg-0 mb-2">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">
@@ -862,18 +719,6 @@ if(typeof _bsa !== 'undefined' && _bsa) {
                 <a class="dropdown-item" href="#"><i class="fas fa-map-marker"></i>&nbsp; Track</a>
                 <a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i>&nbsp; Logout</a>
               </div>
-            </li> 
-            <li class="nav-item mr-lg-2 mb-lg-0 mb-2">
-              <a class="nav-link" href="product.html">New Arrivals</a>
-            </li> 
-            <li class="nav-item mr-lg-2 mb-lg-0 mb-2">
-              <a class="nav-link" href="#">Blog</a>
-            </li>         
-            <li class="nav-item mr-lg-2 mb-lg-0 mb-2">
-              <a class="nav-link" href="about.html">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact Us</a>
             </li>
           </ul>
         </div>
@@ -938,9 +783,9 @@ if(typeof _bsa !== 'undefined' && _bsa) {
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-6 right">                  
-                  <button class="button btn"><img src="imgs/geo.gif" loop=infinite class="geo-img"><span class="geo">USE CURRENT LOCATION </span></button> <br>
-                  <button type="submit" class="btn btn-style-secondary" data-toggle="modal" data-target="#chgdeliveryadd">ADD NEW</button> 
+                <div class="col-lg-6 col-md-6 col-sm-6 right top-padding">
+                  <button class="button btn" onclick="displayLoading()"><div id="loading"></div><img src="imgs/geo.gif" loop=infinite class="geo-img"><span class="geo">USE CURRENT LOCATION</span></button>
+                  <button type="submit" class="btn add-new-btn" data-toggle="modal" data-target="#chgdeliveryadd"><i class="fas fa-plus"></i></button> 
                 </div>
               </div>
               <div class="cart-dis">
@@ -959,7 +804,7 @@ if(typeof _bsa !== 'undefined' && _bsa) {
                   </div>
                   <div class="col-lg-4 col-md-4 col-sm-4">
                     <div class="card-offer">
-                      <span>5/5</span>
+                      <span>1/5</span>
                     </div>
                   </div>
                 </div>
@@ -979,7 +824,7 @@ if(typeof _bsa !== 'undefined' && _bsa) {
                   </div>
                   <div class="col-lg-4 col-md-4 col-sm-4">
                     <div class="card-offer">
-                      <span>4/5</span>
+                      <span>2/5</span>
                     </div>
                   </div>
                 </div>
@@ -1019,7 +864,7 @@ if(typeof _bsa !== 'undefined' && _bsa) {
                   </div>
                   <div class="col-lg-4 col-md-4 col-sm-4">
                     <div class="card-offer">
-                      <span>2/5</span>
+                      <span>4/5</span>
                     </div>
                   </div>
                 </div>
@@ -1039,7 +884,7 @@ if(typeof _bsa !== 'undefined' && _bsa) {
                   </div>
                   <div class="col-lg-4 col-md-4 col-sm-4">
                     <div class="card-offer">
-                      <span>1/5</span>
+                      <span>5/5</span>
                     </div>
                   </div>
                 </div>
@@ -1067,29 +912,16 @@ if(typeof _bsa !== 'undefined' && _bsa) {
           </div>
           </div>
           <div class="card-body">
-            <img src="imgs/foot2.jpg">
+            <img src="imgs/brainly/2.webp">
           </div>
           <div class="card-footer">
-            <p class="card-text">Sweetheart Light Shoes</p>
-            <span class="price">₹ 349.00
-            <del class="del">₹ 399.00</del></span>
+            <p class="card-text">Blue Orange Kingdomino Game</p>
+            <span class="price">₹ 799.00
+            <del class="del">₹ 1,799.00</del></span>
           </div>
-          <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-                        <form action="#" method="post">
-                          <fieldset>
-                            <input type="hidden" name="cmd" value="_cart" />
-                            <input type="hidden" name="add" value="1" />
-                            <input type="hidden" name="business" value=" " />
-                            <input type="hidden" name="item_name" value="Sweetheart Light Shoes" />
-                            <input type="hidden" name="amount" value="399.00" />
-                            <input type="hidden" name="discount_amount" value="50.00" />
-                            <input type="hidden" name="currency_code" value="INR" />
-                            <input type="hidden" name="return" value=" " />
-                            <input type="hidden" name="cancel_return" value=" " />
-                            <button type="submit" name="submit" class="add-to-cart">ADD TO CART</button>
-                          </fieldset>
-                        </form>
-                      </div>
+          <div class="featured-content-list">
+              <button type="button" data-name="Blue Orange Kingdomino Game" data-price="799" class="btn add-to-cart default-btn border-radius-5">Add to cart</button>
+          </div>
         </div> 
         <div class="featured-card">
           <div class="card-header">
@@ -1101,29 +933,16 @@ if(typeof _bsa !== 'undefined' && _bsa) {
           </div>
           </div>
           <div class="card-body">
-            <img src="imgs/dress4.jpg">
+            <img src="imgs/rocker/1.avif">
           </div>
           <div class="card-footer">
-            <p class="card-text">Denim Floral Jacket</p>
-            <span class="price">₹ 499.00
-            <del class="del">₹ 599.00</del></span>
+            <p class="card-text">Felio 3in1 Rocker / Bouncer</p>
+            <span class="price">₹ 3,499.00
+            <del class="del">₹ 7,999.00</del></span>
           </div>
-          <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-                        <form action="#" method="post">
-                          <fieldset>
-                            <input type="hidden" name="cmd" value="_cart" />
-                            <input type="hidden" name="add" value="1" />
-                            <input type="hidden" name="business" value=" " />
-                            <input type="hidden" name="item_name" value="Denim Floral Jacket" />
-                            <input type="hidden" name="amount" value="599.00" />
-                            <input type="hidden" name="discount_amount" value="100.00" />
-                            <input type="hidden" name="currency_code" value="INR" />
-                            <input type="hidden" name="return" value=" " />
-                            <input type="hidden" name="cancel_return" value=" " />
-                            <button type="submit" name="submit" class="add-to-cart">ADD TO CART</button>
-                          </fieldset>
-                        </form>
-                      </div>
+          <div class="featured-content-list">
+              <button type="button" data-name="Felio 3in1 Rocker / Bouncer" data-price="799" class="btn add-to-cart default-btn border-radius-5">Add to cart</button>
+          </div>
         </div>
         <div class="featured-card">
           <div class="card-header">
@@ -1135,29 +954,16 @@ if(typeof _bsa !== 'undefined' && _bsa) {
           </div>
           </div>
           <div class="card-body">
-            <img src="imgs/toy3.jpg">
+            <img src="imgs/carseat/1.avif">
           </div>
           <div class="card-footer">
-            <p class="card-text">Wooden Helicopter Toy</p>
-            <span class="price">₹ 599.00
-            <del class="del">₹ 999.00</del></span>
+            <p class="card-text">Safety Fix Car Seat</p>
+            <span class="price">₹ 8,999.00
+            <del class="del">₹ 17,999.00</del></span>
           </div>
-          <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-                        <form action="#" method="post">
-                          <fieldset>
-                            <input type="hidden" name="cmd" value="_cart" />
-                            <input type="hidden" name="add" value="1" />
-                            <input type="hidden" name="business" value=" " />
-                            <input type="hidden" name="item_name" value="Wooden Helicopter Toy" />
-                            <input type="hidden" name="amount" value="999.00" />
-                            <input type="hidden" name="discount_amount" value="400.00" />
-                            <input type="hidden" name="currency_code" value="INR" />
-                            <input type="hidden" name="return" value=" " />
-                            <input type="hidden" name="cancel_return" value=" " />
-                            <button type="submit" name="submit" class="add-to-cart">ADD TO CART</button>
-                          </fieldset>
-                        </form>
-                      </div>
+          <div class="featured-content-list">
+              <button type="button" data-name="Safety Fix Car Seat" data-price="8999" class="btn add-to-cart default-btn border-radius-5">Add to cart</button>
+          </div>
         </div>
         <div class="featured-card">
           <div class="card-header">
@@ -1169,29 +975,16 @@ if(typeof _bsa !== 'undefined' && _bsa) {
           </div>
           </div>
           <div class="card-body">
-            <img src="imgs/toy2.jpg">
+            <img src="imgs/wheel/1.webp">
           </div>
           <div class="card-footer">
-            <p class="card-text">Plugo STEM Pack</p>
-            <span class="price">₹ 320.00
-            <del class="del">₹ 340.00</del></span>
+            <p class="card-text">Hot Wheels Basic Car</p>
+            <span class="price">₹ 179.00
+            <del class="del">₹ 399.00</del></span>
           </div>
-          <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-                        <form action="#" method="post">
-                          <fieldset>
-                            <input type="hidden" name="cmd" value="_cart" />
-                            <input type="hidden" name="add" value="1" />
-                            <input type="hidden" name="business" value=" " />
-                            <input type="hidden" name="item_name" value="Plugo STEM Pack" />
-                            <input type="hidden" name="amount" value="340.00" />
-                            <input type="hidden" name="discount_amount" value="20.00" />
-                            <input type="hidden" name="currency_code" value="INR" />
-                            <input type="hidden" name="return" value=" " />
-                            <input type="hidden" name="cancel_return" value=" " />
-                            <button type="submit" name="submit" class="add-to-cart">ADD TO CART</button>
-                          </fieldset>
-                        </form>
-                      </div>
+          <div class="featured-content-list">
+              <button type="button" data-name="Hot Wheels Basic Car" data-price="399" class="btn add-to-cart default-btn border-radius-5">Add to cart</button>
+          </div>
         </div>
         <div class="featured-card">
           <div class="card-header">
@@ -1203,29 +996,16 @@ if(typeof _bsa !== 'undefined' && _bsa) {
           </div>
           </div>
           <div class="card-body">
-            <img src="imgs/dress1.jpg">
+            <img src="imgs/wheel/4.webp">
           </div>
           <div class="card-footer">
-            <p class="card-text">Cotton-Blend Denim</p>
-            <span class="price">₹ 280.00
-            <del class="del">₹ 300.00</del></span>
+            <p class="card-text">Hot Wheels Track </p>
+            <span class="price">₹ 399.00
+            <del class="del">₹ 499.00</del></span>
           </div>
-          <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-                        <form action="#" method="post">
-                          <fieldset>
-                            <input type="hidden" name="cmd" value="_cart" />
-                            <input type="hidden" name="add" value="1" />
-                            <input type="hidden" name="business" value=" " />
-                            <input type="hidden" name="item_name" value="Cotton-Blend Denim" />
-                            <input type="hidden" name="amount" value="300.00" />
-                            <input type="hidden" name="discount_amount" value="20.00" />
-                            <input type="hidden" name="currency_code" value="INR" />
-                            <input type="hidden" name="return" value=" " />
-                            <input type="hidden" name="cancel_return" value=" " />
-                            <button type="submit" name="submit" class="add-to-cart">ADD TO CART</button>
-                          </fieldset>
-                        </form>
-                      </div>
+          <div class="featured-content-list">
+              <button type="button" data-name="Hot Wheels Track" data-price="399" class="btn add-to-cart default-btn border-radius-5">Add to cart</button>
+          </div>
         </div>
         <div class="featured-card">
           <div class="card-header">
@@ -1237,29 +1017,16 @@ if(typeof _bsa !== 'undefined' && _bsa) {
           </div>
           </div>
           <div class="card-body">
-            <img src="imgs/dress2.jpeg">
+            <img src="imgs/viga/2.avif">
           </div>
           <div class="card-footer">
-            <p class="card-text">Boys Regular Fit Jacket</p>
-            <span class="price">₹ 249.00
-            <del class="del">₹ 300.00</del></span>
+            <p class="card-text">Viga Construction Block Set</p>
+            <span class="price">₹ 1,999.00
+            <del class="del">₹ 2,999.00</del></span>
           </div>
-          <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-                        <form action="#" method="post">
-                          <fieldset>
-                            <input type="hidden" name="cmd" value="_cart" />
-                            <input type="hidden" name="add" value="1" />
-                            <input type="hidden" name="business" value=" " />
-                            <input type="hidden" name="item_name" value="Boys Regular Fit Jacket" />
-                            <input type="hidden" name="amount" value="300.00" />
-                            <input type="hidden" name="discount_amount" value="51.00" />
-                            <input type="hidden" name="currency_code" value="INR" />
-                            <input type="hidden" name="return" value=" " />
-                            <input type="hidden" name="cancel_return" value=" " />
-                            <button type="submit" name="submit" class="add-to-cart">ADD TO CART</button>
-                          </fieldset>
-                        </form>
-                      </div>
+          <div class="featured-content-list">
+              <button type="button" data-name="Viga Construction Block Set" data-price="1999" class="btn add-to-cart default-btn border-radius-5">Add to cart</button>
+          </div>
         </div>
         <div class="featured-card">
           <div class="card-header">
@@ -1271,29 +1038,16 @@ if(typeof _bsa !== 'undefined' && _bsa) {
           </div>
           </div>
           <div class="card-body">
-            <img src="imgs/dress3.jpg">
+            <img src="imgs/viga/3.avif">
           </div>
           <div class="card-footer">
-            <p class="card-text">Pink Jumpsuit for Kids</p>
-            <span class="price">₹ 180.00
-            <del class="del">₹ 200.00</del></span>
+            <p class="card-text">Viga Touch & Match Board</p>
+            <span class="price">₹ 899.00
+            <del class="del">₹ 1,499.00</del></span>
           </div>
-          <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-                        <form action="#" method="post">
-                          <fieldset>
-                            <input type="hidden" name="cmd" value="_cart" />
-                            <input type="hidden" name="add" value="1" />
-                            <input type="hidden" name="business" value=" " />
-                            <input type="hidden" name="item_name" value="Pink Jumpsuit for Kids" />
-                            <input type="hidden" name="amount" value="200.00" />
-                            <input type="hidden" name="discount_amount" value="20.00" />
-                            <input type="hidden" name="currency_code" value="INR" />
-                            <input type="hidden" name="return" value=" " />
-                            <input type="hidden" name="cancel_return" value=" " />
-                            <button type="submit" name="submit" class="add-to-cart">ADD TO CART</button>
-                          </fieldset>
-                        </form>
-                      </div>
+          <div class="featured-content-list">
+              <button type="button" data-name="Viga Touch & Match Board" data-price="899" class="btn add-to-cart default-btn border-radius-5">Add to cart</button>
+          </div>
         </div>
         <div class="featured-card">
           <div class="card-header">
@@ -1305,29 +1059,16 @@ if(typeof _bsa !== 'undefined' && _bsa) {
           </div>
           </div>
           <div class="card-body">
-            <img src="imgs/dress4.jpg">
+            <img src="imgs/house/4.avif">
           </div>
           <div class="card-footer">
-            <p class="card-text">Denim Floral Jacket</p>
-            <span class="price">₹ 499.00
-            <del class="del">₹ 599.00</del></span>
+            <p class="card-text">Step2 Seaside Villa Playhouse</p>
+            <span class="price">₹ 54,999.00
+            <del class="del">₹ 59,999.00</del></span>
           </div>
-          <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-                        <form action="#" method="post">
-                          <fieldset>
-                            <input type="hidden" name="cmd" value="_cart" />
-                            <input type="hidden" name="add" value="1" />
-                            <input type="hidden" name="business" value=" " />
-                            <input type="hidden" name="item_name" value="Denim Floral Jacket" />
-                            <input type="hidden" name="amount" value="599.00" />
-                            <input type="hidden" name="discount_amount" value="100.00" />
-                            <input type="hidden" name="currency_code" value="INR" />
-                            <input type="hidden" name="return" value=" " />
-                            <input type="hidden" name="cancel_return" value=" " />
-                            <button type="submit" name="submit" class="add-to-cart">ADD TO CART</button>
-                          </fieldset>
-                        </form>
-                      </div>
+          <div class="featured-content-list">
+              <button type="button" data-name="Step2 Seaside Villa Playhouse" data-price="59999" class="btn add-to-cart default-btn border-radius-5">Add to cart</button>
+          </div>
         </div>       
       </div>
             </div>
@@ -1350,30 +1091,16 @@ if(typeof _bsa !== 'undefined' && _bsa) {
           </div>
           </div>
           <div class="card-body">
-            <img src="imgs/foot2.jpg">
+            <img src="imgs/house/1.avif">
           </div>
           <div class="card-footer">
-            <p class="card-text">Sweetheart Light Shoes</p>
-            <span class="price">₹ 349.00
-            <del class="del">₹ 399.00</del></span>
+            <p class="card-text">Wooden Playhouse -White</p>
+            <span class="price">₹ 69,999.00
+            <del class="del">₹ 79,999.00</del></span>
           </div>
-                      <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-                        <form action="#" method="post">
-                          <fieldset>
-                            <input type="hidden" name="cmd" value="_cart" />
-                            <input type="hidden" name="add" value="1" />
-                            <input type="hidden" name="business" value=" " />
-                            <input type="hidden" name="item_name" value="Sweetheart Light Shoes" />
-                            <input type="hidden" name="amount" value="399.00" />
-                            <input type="hidden" name="discount_amount" value="50.00" />
-                            <input type="hidden" name="currency_code" value="INR" />
-                            <input type="hidden" name="return" value=" " />
-                            <input type="hidden" name="cancel_return" value=" " />
-                            <button type="submit" name="submit" class="add-to-cart">ADD TO CART</button>
-                          </fieldset>
-                        </form>
-                      </div>
-          <!-- <button type="submit" name="submit" class="add-to-cart">ADD TO CART</button> -->
+          <div class="featured-content-list">
+              <button type="button" data-name="Wooden Playhouse -White" data-price="69999" class="btn add-to-cart default-btn border-radius-5">Add to cart</button>
+          </div>
         </div> 
         <div class="featured-card">
           <div class="card-header">
@@ -1385,29 +1112,16 @@ if(typeof _bsa !== 'undefined' && _bsa) {
           </div>
           </div>
           <div class="card-body">
-            <img src="imgs/dress4.jpg">
+            <img src="imgs/trampoline/2.webp">
           </div>
           <div class="card-footer">
-            <p class="card-text">Denim Floral Jacket</p>
-            <span class="price">₹ 499.00
-            <del class="del">₹ 599.00</del></span>
+            <p class="card-text">Climb 'n Slide Trampoline</p>
+            <span class="price">₹ 1,099.00
+            <del class="del">₹ 1,599.00</del></span>
           </div>
-          <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-                        <form action="#" method="post">
-                          <fieldset>
-                            <input type="hidden" name="cmd" value="_cart" />
-                            <input type="hidden" name="add" value="1" />
-                            <input type="hidden" name="business" value=" " />
-                            <input type="hidden" name="item_name" value="Denim Floral Jacket" />
-                            <input type="hidden" name="amount" value="599.00" />
-                            <input type="hidden" name="discount_amount" value="100.00" />
-                            <input type="hidden" name="currency_code" value="INR" />
-                            <input type="hidden" name="return" value=" " />
-                            <input type="hidden" name="cancel_return" value=" " />
-                            <button type="submit" name="submit" class="add-to-cart">ADD TO CART</button>
-                          </fieldset>
-                        </form>
-                      </div>
+          <div class="featured-content-list">
+              <button type="button" data-name="Climb 'n Slide Trampoline" data-price="1099" class="btn add-to-cart default-btn border-radius-5">Add to cart</button>
+          </div>
         </div>
         <div class="featured-card">
           <div class="card-header">
@@ -1419,29 +1133,16 @@ if(typeof _bsa !== 'undefined' && _bsa) {
           </div>
           </div>
           <div class="card-body">
-            <img src="imgs/toy3.jpg">
+            <img src="imgs/educational/1.avif">
           </div>
           <div class="card-footer">
-            <p class="card-text">Wooden Helicopter Toy</p>
-            <span class="price">₹ 599.00
-            <del class="del">₹ 999.00</del></span>
+            <p class="card-text">Peaceable Kingdom Race</p>
+            <span class="price">₹ 799.00
+            <del class="del">₹ 1,599.00</del></span>
           </div>
-          <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-                        <form action="#" method="post">
-                          <fieldset>
-                            <input type="hidden" name="cmd" value="_cart" />
-                            <input type="hidden" name="add" value="1" />
-                            <input type="hidden" name="business" value=" " />
-                            <input type="hidden" name="item_name" value="Wooden Helicopter Toy" />
-                            <input type="hidden" name="amount" value="999.00" />
-                            <input type="hidden" name="discount_amount" value="400.00" />
-                            <input type="hidden" name="currency_code" value="INR" />
-                            <input type="hidden" name="return" value=" " />
-                            <input type="hidden" name="cancel_return" value=" " />
-                            <button type="submit" name="submit" class="add-to-cart">ADD TO CART</button>
-                          </fieldset>
-                        </form>
-                      </div>
+          <div class="featured-content-list">
+              <button type="button" data-name="Peaceable Kingdom Race" data-price="799" class="btn add-to-cart default-btn border-radius-5">Add to cart</button>
+          </div>
         </div>
         <div class="featured-card">
           <div class="card-header">
@@ -1453,29 +1154,16 @@ if(typeof _bsa !== 'undefined' && _bsa) {
           </div>
           </div>
           <div class="card-body">
-            <img src="imgs/toy2.jpg">
+            <img src="imgs/educational/2.avif">
           </div>
           <div class="card-footer">
-            <p class="card-text">Plugo STEM Pack</p>
-            <span class="price">₹ 320.00
-            <del class="del">₹ 340.00</del></span>
+            <p class="card-text">Peaceable Kingdom Topper</p>
+            <span class="price">₹ 899.00
+            <del class="del">₹ 1,999.00</del></span>
           </div>
-          <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-                        <form action="#" method="post">
-                          <fieldset>
-                            <input type="hidden" name="cmd" value="_cart" />
-                            <input type="hidden" name="add" value="1" />
-                            <input type="hidden" name="business" value=" " />
-                            <input type="hidden" name="item_name" value="Plugo STEM Pack" />
-                            <input type="hidden" name="amount" value="340.00" />
-                            <input type="hidden" name="discount_amount" value="20.00" />
-                            <input type="hidden" name="currency_code" value="INR" />
-                            <input type="hidden" name="return" value=" " />
-                            <input type="hidden" name="cancel_return" value=" " />
-                            <button type="submit" name="submit" class="add-to-cart">ADD TO CART</button>
-                          </fieldset>
-                        </form>
-                      </div>
+          <div class="featured-content-list">
+              <button type="button" data-name="Peaceable Kingdom Topper" data-price="899" class="btn add-to-cart default-btn border-radius-5">Add to cart</button>
+          </div>
         </div>
         <div class="featured-card">
           <div class="card-header">
@@ -1487,29 +1175,16 @@ if(typeof _bsa !== 'undefined' && _bsa) {
           </div>
           </div>
           <div class="card-body">
-            <img src="imgs/dress1.jpg">
+            <img src="imgs/highchair/1.avif">
           </div>
           <div class="card-footer">
-            <p class="card-text">Cotton-Blend Denim</p>
-            <span class="price">₹ 280.00
-            <del class="del">₹ 300.00</del></span>
+            <p class="card-text">Yummy Highchair</p>
+            <span class="price">₹ 6,499.00
+            <del class="del">₹ 12,999.00</del></span>
           </div>
-          <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-                        <form action="#" method="post">
-                          <fieldset>
-                            <input type="hidden" name="cmd" value="_cart" />
-                            <input type="hidden" name="add" value="1" />
-                            <input type="hidden" name="business" value=" " />
-                            <input type="hidden" name="item_name" value="Cotton-Blend Denim" />
-                            <input type="hidden" name="amount" value="300.00" />
-                            <input type="hidden" name="discount_amount" value="20.00" />
-                            <input type="hidden" name="currency_code" value="INR" />
-                            <input type="hidden" name="return" value=" " />
-                            <input type="hidden" name="cancel_return" value=" " />
-                            <button type="submit" name="submit" class="add-to-cart">ADD TO CART</button>
-                          </fieldset>
-                        </form>
-                      </div>
+          <div class="featured-content-list">
+              <button type="button" data-name="Yummy Highchair" data-price="6499" class="btn add-to-cart default-btn border-radius-5">Add to cart</button>
+          </div>
         </div>
         <div class="featured-card">
           <div class="card-header">
@@ -1521,29 +1196,16 @@ if(typeof _bsa !== 'undefined' && _bsa) {
           </div>
           </div>
           <div class="card-body">
-            <img src="imgs/dress2.jpeg">
+            <img src="imgs/highchair/3.avif">
           </div>
           <div class="card-footer">
-            <p class="card-text">Boys Regular Fit Jacket</p>
-            <span class="price">₹ 249.00
-            <del class="del">₹ 300.00</del></span>
+            <p class="card-text">Enock Highchair </p>
+            <span class="price">₹ 8,999.00
+            <del class="del">₹ 19,999.00</del></span>
           </div>
-          <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-                        <form action="#" method="post">
-                          <fieldset>
-                            <input type="hidden" name="cmd" value="_cart" />
-                            <input type="hidden" name="add" value="1" />
-                            <input type="hidden" name="business" value=" " />
-                            <input type="hidden" name="item_name" value="Boys Regular Fit Jacket" />
-                            <input type="hidden" name="amount" value="300.00" />
-                            <input type="hidden" name="discount_amount" value="51.00" />
-                            <input type="hidden" name="currency_code" value="INR" />
-                            <input type="hidden" name="return" value=" " />
-                            <input type="hidden" name="cancel_return" value=" " />
-                            <button type="submit" name="submit" class="add-to-cart">ADD TO CART</button>
-                          </fieldset>
-                        </form>
-                      </div>
+          <div class="featured-content-list">
+              <button type="button" data-name="Enock Highchair " data-price="8999" class="btn add-to-cart default-btn border-radius-5">Add to cart</button>
+          </div>
         </div>
         <div class="featured-card">
           <div class="card-header">
@@ -1555,29 +1217,16 @@ if(typeof _bsa !== 'undefined' && _bsa) {
           </div>
           </div>
           <div class="card-body">
-            <img src="imgs/dress3.jpg">
+            <img src="imgs/barbie/3.webp">
           </div>
           <div class="card-footer">
-            <p class="card-text">Pink Jumpsuit for Kids</p>
-            <span class="price">₹ 180.00
-            <del class="del">₹ 200.00</del></span>
+            <p class="card-text">Barbie Team Stacie</p>
+            <span class="price">₹ 1,599.00
+            <del class="del">₹ 1,999.00</del></span>
           </div>
-          <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-                        <form action="#" method="post">
-                          <fieldset>
-                            <input type="hidden" name="cmd" value="_cart" />
-                            <input type="hidden" name="add" value="1" />
-                            <input type="hidden" name="business" value=" " />
-                            <input type="hidden" name="item_name" value="Pink Jumpsuit for Kids" />
-                            <input type="hidden" name="amount" value="200.00" />
-                            <input type="hidden" name="discount_amount" value="20.00" />
-                            <input type="hidden" name="currency_code" value="INR" />
-                            <input type="hidden" name="return" value=" " />
-                            <input type="hidden" name="cancel_return" value=" " />
-                            <button type="submit" name="submit" class="add-to-cart">ADD TO CART</button>
-                          </fieldset>
-                        </form>
-                      </div>
+          <div class="featured-content-list">
+              <button type="button" data-name="Barbie Team Stacie" data-price="1599" class="btn add-to-cart default-btn border-radius-5">Add to cart</button>
+          </div>
         </div>
         <div class="featured-card">
           <div class="card-header">
@@ -1589,29 +1238,16 @@ if(typeof _bsa !== 'undefined' && _bsa) {
           </div>
           </div>
           <div class="card-body">
-            <img src="imgs/dress4.jpg">
+            <img src="imgs/nerf/1.webp">
           </div>
           <div class="card-footer">
-            <p class="card-text">Denim Floral Jacket</p>
-            <span class="price">₹ 499.00
-            <del class="del">₹ 599.00</del></span>
+            <p class="card-text">Elite Disruptor Toy Blaster</p>
+            <span class="price">₹ 1,099.00
+            <del class="del">₹ 1,399.00</del></span>
           </div>
-          <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-                        <form action="#" method="post">
-                          <fieldset>
-                            <input type="hidden" name="cmd" value="_cart" />
-                            <input type="hidden" name="add" value="1" />
-                            <input type="hidden" name="business" value=" " />
-                            <input type="hidden" name="item_name" value="Denim Floral Jacket" />
-                            <input type="hidden" name="amount" value="599.00" />
-                            <input type="hidden" name="discount_amount" value="100.00" />
-                            <input type="hidden" name="currency_code" value="INR" />
-                            <input type="hidden" name="return" value=" " />
-                            <input type="hidden" name="cancel_return" value=" " />
-                            <button type="submit" name="submit" class="add-to-cart">ADD TO CART</button>
-                          </fieldset>
-                        </form>
-                      </div>
+          <div class="featured-content-list">
+              <button type="button" data-name="Elite Disruptor Toy Blaster" data-price="1099" class="btn add-to-cart default-btn border-radius-5">Add to cart</button>
+          </div>
         </div>       
       </div>
             </div>
@@ -2663,7 +2299,21 @@ function printmsg() {
     </script>
 <!-- end of captcha -->
 
+
+<script>
+                  // selecting loading div
+const loader = document.querySelector("#loading");
+                  // showing loading
+function displayLoading() {
+    loader.classList.add("display");
+    // to stop loading after some time
+    setTimeout(() => {
+        loader.classList.remove("display");
+    }, 15000);
+}
+                </script>
 <script src="js/cart.js"></script>
 <script src="js/current_loc.js"></script>
+<script src="js/signup.js"></script>
 </body>
 </html>
