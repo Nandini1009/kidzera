@@ -6531,7 +6531,7 @@ table {
 .grid span {
     font-weight: 700;
     text-align: center;
-    line-height: 4;
+    /*line-height: 4;*/
     font-size: 1.125rem;
 }
 .outdoor-grid {
@@ -6551,12 +6551,17 @@ table {
 
 #fashion .other {
     border-radius: 100% !important;
-    width: 100%;
+    width: 165%;
     padding: 10px;
+    margin: 0 0 0 -55px;
+}
+.head {
+    right: 27px;
+    position: relative;
 }
 #fashion .ex {
     border-radius: 100% !important;
-    width: 90%;
+    width: 70%;
     padding: 10px;
 }
 #fashion .off {
@@ -6605,4 +6610,39 @@ table {
 }
 .top-padding {
     margin-top: -20px;
+}
+.autocomplete-items {
+  background: #fff;
+  border: none;
+  outline: none;
+  border: none;
+  padding: 0;
+  position: absolute;
+  top: 52px;
+  width: 82%;
+  color: #000;
+  box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  z-index: 100;
+  user-select: none;
+  transition: ease 0.3s;
+}
+
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff; 
+  /*border-bottom: 1px solid #d4d4d4; */
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+}
+
+/*when hovering an item:*/
+.autocomplete-items div:hover {
+  background-color: #f0fa9754; 
+}
+
+/*when navigating through the items using the arrow keys:*/
+.autocomplete-active {
+  background-color: #f0fa9754 !important; 
+  color: #000; 
 }
