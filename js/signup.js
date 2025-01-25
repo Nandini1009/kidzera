@@ -7,7 +7,7 @@ var steps = $("fieldset").length;
 
 setProgressBar(current);
 
-$(".next").click(function(){
+$(".next-btn").click(function(){
 
 current_fs = $(this).parent();
 next_fs = $(this).parent().next();
@@ -34,7 +34,7 @@ duration: 500
 setProgressBar(++current);
 });
 
-$(".previous").click(function(){
+$(".previous-btn").click(function(){
 
 current_fs = $(this).parent();
 previous_fs = $(this).parent().prev();
@@ -69,7 +69,7 @@ $(".progress-bar")
 .css("width",percent+"%")
 }
 
-$(".submit").click(function(){
+$(".submit-btn").click(function(){
 return false;
 })
 
